@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
+import { error } from 'protractor';
 
 @Component({
   selector: 'app-error-component',
@@ -7,17 +8,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./error-component.component.css']
 })
 export class ErrorComponent implements OnInit {
-  @ViewChild('modalpopup') buttonclick: ElementRef;
-@Input() errorMessage:string;
+ showError:boolean
+  error:any;
+
   constructor(private router:Router) { 
     
   }
 
   ngOnInit(): void {
-   // your other code
-   setTimeout(() => {
-    this.buttonclick.nativeElement.click();
-    }, 200);
+    debugger;
+    this.error=window.history.state.data.error;
+    this.showError=!this.error;
+    console.log(window.history.state);
   }
 
 }

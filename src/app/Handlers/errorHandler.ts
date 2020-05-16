@@ -1,7 +1,9 @@
 import { Injectable, ErrorHandler, NgZone, EventEmitter, Injector } from "@angular/core";
 import { Router } from '@angular/router';
 
-@Injectable()
+@Injectable({
+      providedIn: 'root'
+      })
 export class GlobalExceptionHandler implements ErrorHandler {
      
       isInErrorState:boolean = false;
