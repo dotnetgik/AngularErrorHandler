@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularErrorHandling';
+
+  ngOnInit()
+  {
+    throw new RangeError("Error Occured in App Component");
+  }
+
 }
