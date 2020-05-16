@@ -6,11 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngularErrorHandling';
-
-  ngOnInit()
-  {
-    throw new RangeError("Error Occured in App Component");
+  title = 'Angular Error Handling';
+  ngOnInit(): void {
+   
   }
-
 }

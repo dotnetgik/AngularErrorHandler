@@ -1,0 +1,14 @@
+.MainDiv {
+    border-style: outset;
+    border-radius: 10px;
+    box-shadow: black;
+    box-shadow: 3px 1px skyblue;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .MainDivRouterOutlate {
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+  } 
